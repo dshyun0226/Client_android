@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMainBlack"
+        android:orientation="vertical"
+        tools:context=".Activity.LoginActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="87dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artoo"
+                android:textSize="18sp"
+                android:textColor="#ffffff"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="22dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join us"
+                android:textSize="47sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="49dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=" 은행"
+                android:textSize="16sp"
+                android:textColor="#c6c6c6"/>
+        <Spinner
+                android:id="@+id/spn_join_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#b5b5b5"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_weight="4"
+                android:background="#b5b5b5"
+                android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="18dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=" 계좌번호"
+                android:textSize="16sp"
+                android:textColor="#c6c6c6"/>
+        <EditText
+                android:id="@+id/et_join_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" '-' 없이 입력"
+                android:textAlignment="viewEnd"
+                android:textSize="16sp"
+                android:textColor="#c6c6c6"
+                android:textColorHint="#c6c6c6"
+                android:backgroundTint="#c6c6c6"
+                android:imeOptions="actionDone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageButton
+                android:id="@+id/btn_join_next3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="96dp"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/join_next"
+                android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</LinearLayout>

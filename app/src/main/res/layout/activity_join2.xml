@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBlack"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="87dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artoo"
+            android:textSize="18sp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="22dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join us"
+            android:textSize="47sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="49dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=" Name"
+            android:textSize="16sp"
+            android:textColor="#c6c6c6"/>
+        <EditText
+            android:id="@+id/et_join_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+            android:textSize="16sp"
+            android:textColor="#c6c6c6"
+            android:textColorHint="#c6c6c6"
+            android:backgroundTint="#c6c6c6"
+            android:imeOptions="actionDone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=" Phone"
+            android:textSize="16sp"
+            android:textColor="#c6c6c6"/>
+        <EditText
+            android:id="@+id/et_join_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" '-' 없이 입력"
+            android:textAlignment="viewEnd"
+            android:textSize="16sp"
+            android:textColor="#c6c6c6"
+            android:textColorHint="#c6c6c6"
+            android:backgroundTint="#c6c6c6"
+            android:imeOptions="actionDone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=" Address"
+            android:textSize="16sp"
+            android:textColor="#c6c6c6"/>
+        <EditText
+            android:id="@+id/et_join_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" ex. 서울시 광진구"
+            android:textAlignment="viewEnd"
+            android:textSize="16sp"
+            android:textColor="#c6c6c6"
+            android:textColorHint="#c6c6c6"
+            android:backgroundTint="#c6c6c6"
+            android:imeOptions="actionDone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/btn_join_next2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="96dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            app:srcCompat="@drawable/join_next"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</LinearLayout>
